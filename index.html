@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="th" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThemeKit - Wireframe HTML Framework</title>
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    /* Wireframe Aesthetic Customizations */
+    :root {
+      --wireframe-border: #e2e8f0;
+      --wireframe-bg-subtle: #f8fafc;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+    }
+
+    .border-wireframe {
+      border: 1px solid var(--wireframe-border) !important;
+    }
+
+    .bg-wireframe-subtle {
+      background-color: var(--wireframe-bg-subtle);
+    }
+
+    .card-wireframe {
+      border: 1px solid var(--wireframe-border);
+      border-radius: 0.75rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .card-wireframe:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Grid Canvas Pattern for Hero Wireframe Box */
+    .wireframe-canvas {
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. Header / Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold fs-4 text-dark" href="#">
+        <span class="bg-dark text-white rounded-2 px-2 py-1 me-2 fs-6"><i class="bi bi-bounding-box-circles"></i></span>
+        PANDA
+        <span class="badge bg-light text-secondary border ms-2 fs-7 fw-normal">v2.4 Wireframe</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto fw-medium">
+          <li class="nav-item"><a class="nav-link text-dark active" href="#">Overview</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#components">Components</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#layouts">Layouts</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#docs">Documentation</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-link text-decoration-none text-dark fw-medium">Sign In</a>
+          <a href="#" class="btn btn-dark px-4 rounded-3 fw-medium">Get ThemeKit</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero Section -->
+  <section class="py-5 bg-wireframe-subtle border-bottom">
+    <div class="container py-4 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <span class="badge bg-white text-dark border rounded-pill px-3 py-2 mb-3 shadow-sm">
+            <i class="bi bi-layers-half text-primary me-1"></i> Modular Wireframe HTML Framework
+          </span>
+          <h1 class="display-4 fw-extrabold text-dark mb-3">
+            Build clean wireframes & web interfaces at lightspeed.
+          </h1>
+          <p class="lead text-secondary mb-4 px-md-4">
+            ThemeKit provides essential UI components, layouts, and flexible grid structures designed specifically for
+            developers and UI designers.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+            <a href="#components" class="btn btn-primary btn-lg px-4 rounded-3 fw-semibold">
+              <i class="bi bi-grid-5x5-gap me-2"></i>Explore UI Blocks
+            </a>
+            <a href="#docs" class="btn btn-outline-secondary btn-lg px-4 rounded-3 fw-semibold bg-white">
+              <i class="bi bi-file-earmark-code me-2"></i>Documentation
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulated Wireframe Prototype Canvas -->
+      <div class="wireframe-canvas border rounded-4 p-4 shadow-sm bg-white">
+        <div class="row g-3">
+          <div class="col-md-3">
+            <div class="border rounded-3 p-3 bg-light text-start h-100">
+              <div class="placeholder-glow mb-3">
+                <span class="placeholder col-8 bg-secondary rounded"></span>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div class="p-2 border bg-white rounded-2 small text-secondary"><i class="bi bi-house me-2"></i>
+                  Dashboard</div>
+                <div class="p-2 border bg-white rounded-2 small text-secondary"><i class="bi bi-box me-2"></i>
+                  Components</div>
+                <div class="p-2 border bg-white rounded-2 small text-secondary"><i class="bi bi-gear me-2"></i> Settings
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="border rounded-3 p-4 bg-white text-start">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold mb-0">Live UI Canvas Preview</h6>
+                <span class="badge bg-success-subtle text-success">Responsive Active</span>
+              </div>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="p-3 border rounded-3 bg-light">
+                    <span class="text-muted small">Component A</span>
+                    <h5 class="fw-bold my-1">Flex Grid Module</h5>
+                    <div class="progress mt-2" style="height: 6px;">
+                      <div class="progress-bar bg-primary" style="width: 75%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 border rounded-3 bg-light">
+                    <span class="text-muted small">Component B</span>
+                    <h5 class="fw-bold my-1">Form Elements</h5>
+                    <div class="progress mt-2" style="height: 6px;">
+                      <div class="progress-bar bg-dark" style="width: 45%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. Key Framework Features -->
+  <section class="py-5 border-bottom">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-2">Designed for Rapid Prototyping</h2>
+        <p class="text-secondary">Everything you need to turn raw ideas into clean code structure.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card-wireframe p-4 h-100">
+            <div class="bg-primary-subtle text-primary rounded-3 d-inline-flex p-3 mb-3">
+              <i class="bi bi-cpu fs-3"></i>
+            </div>
+            <h5 class="fw-bold">100+ Ready UI Blocks</h5>
+            <p class="text-secondary small mb-0">
+              Pre-built layouts for headers, footers, pricing tables, team grids, and content sections.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-wireframe p-4 h-100">
+            <div class="bg-dark-subtle text-dark rounded-3 d-inline-flex p-3 mb-3">
+              <i class="bi bi-code-slash fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Clean SCSS / CSS Structure</h5>
+            <p class="text-secondary small mb-0">
+              Lightweight styles built on Bootstrap standard utilities without bloatware or heavy libraries.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-wireframe p-4 h-100">
+            <div class="bg-success-subtle text-success rounded-3 d-inline-flex p-3 mb-3">
+              <i class="bi bi-phone fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Fully Responsive Grid</h5>
+            <p class="text-secondary small mb-0">
+              Seamlessly scales across mobile screens, tablets, desktops, and ultra-wide displays.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. UI Components Showcase Section -->
+  <section class="py-5 bg-wireframe-subtle border-bottom" id="components">
+    <div class="container py-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+        <div>
+          <h2 class="fw-bold mb-1">Component Library Preview</h2>
+          <p class="text-secondary mb-0">Sample wireframe elements included in ThemeKit.</p>
+        </div>
+        <a href="#" class="btn btn-sm btn-outline-dark bg-white">View All Components <i
+            class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card Sample 1: Pricing Table -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-wireframe p-4 bg-white h-100">
+            <span class="badge bg-light text-dark border mb-2">Pricing Block</span>
+            <h4 class="fw-bold">Pro Plan</h4>
+            <div class="display-6 fw-bold my-2">$29<span class="fs-6 text-muted font-normal">/mo</span></div>
+            <ul class="list-unstyled text-secondary small py-2 d-flex flex-column gap-2 mb-4">
+              <li><i class="bi bi-check2 text-primary me-2"></i> Unlimited Wireframe Projects</li>
+              <li><i class="bi bi-check2 text-primary me-2"></i> SCSS Source Files</li>
+              <li><i class="bi bi-check2 text-primary me-2"></i> Lifetime Updates</li>
+            </ul>
+            <button class="btn btn-outline-dark w-100 mt-auto rounded-3">Select Plan</button>
+          </div>
+        </div>
+
+        <!-- Card Sample 2: Form Controls -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-wireframe p-4 bg-white h-100">
+            <span class="badge bg-light text-dark border mb-2">Form Block</span>
+            <h4 class="fw-bold">Quick Contact</h4>
+            <form class="mt-3">
+              <div class="mb-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Your Name">
+              </div>
+              <div class="mb-2">
+                <input type="email" class="form-control form-control-sm" placeholder="Email Address">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control form-control-sm" rows="2" placeholder="Message..."></textarea>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm w-100 rounded-3">Send Wireframe Form</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Card Sample 3: Media & User Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-wireframe p-4 bg-white h-100">
+            <span class="badge bg-light text-dark border mb-2">User Profile Block</span>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-secondary-subtle rounded-circle p-3 text-secondary">
+                <i class="bi bi-person-fill fs-3"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-0">Alex Morgan</h5>
+                <span class="text-muted small">Lead UI/UX Designer</span>
+              </div>
+            </div>
+            <p class="text-secondary small mb-3">
+              Creating wireframe systems and component architecture for web applications.
+            </p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-light border btn-sm w-50">Follow</button>
+              <button class="btn btn-dark btn-sm w-50">Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Call to Action Banner -->
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container py-4">
+      <h2 class="display-6 fw-bold mb-3">Ready to accelerate your UI workflow?</h2>
+      <p class="text-secondary-emphasis lead mb-4">Start prototyping with ThemeKit Wireframe HTML Framework today.</p>
+      <a href="#" class="btn btn-primary btn-lg px-5 rounded-3 fw-semibold">Download Framework</a>
+    </div>
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="py-4 border-top bg-white">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <span class="fw-bold">ThemeKit</span>
+          <span class="text-muted small">&copy; 2026 Wireframe Framework. All rights reserved.</span>
+        </div>
+        <ul class="nav small fw-medium">
+          <li class="nav-item"><a href="#" class="nav-link text-secondary px-2">Privacy Policy</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-secondary px-2">Terms of Use</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-secondary px-2">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
